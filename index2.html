@@ -4,27 +4,30 @@
 <meta charset="utf-8">
 <style>
 html, body { height: 100%; margin: 0; }
-form {
+#ok {
   position: absolute;
   top: 50%;
   left: 50%;
   width: 50%;
-  transform: translate(-50%, -50%);
 }
-input { width: 100%; margin: 5% 0; box-sizing: border-box; }
+
 </style>
 </head>
 <body>
+<div id=ok>
+
 <form onsubmit="return false">
   <input id="login" placeholder="Login">
   <input id="password" type="password" placeholder="Password">
   <button onclick="go()">Login</button>
 </form>
 <h1><div id="out"></div></h1>
+</div>
+
 <script>
 function go() {
   out.textContent =
-    'Login: ' + login.value  + ' Password: ' + password.value;
+    'Login: ' + login.value  + '\n Password: ' + password.value;
 }
 </script>
 </body>
