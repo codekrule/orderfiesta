@@ -1,6 +1,5 @@
-Answer only in JSON format!
+Answer only in JSON format.
 Structure:
 {
-    "model_name": "<model_name>",
-    "string":"<any greetings>"
+    "model_name": "<model_name>"
 }
